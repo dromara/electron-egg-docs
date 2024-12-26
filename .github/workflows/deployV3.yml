@@ -28,6 +28,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
           # Build output to publish to the `gh-pages` branch:
           publish_dir: ./docs/.vuepress/dist
           publish_branch: dist_v3
